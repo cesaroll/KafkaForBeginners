@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace ProducerDemo
 {
-    class Program
+    class ProducerDemo
     {
         static async Task Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace ProducerDemo
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var logger = serviceProvider.GetService<ILogger<Program>>();
+            var logger = serviceProvider.GetService<ILogger<ProducerDemo>>();
 
             var config = new ProducerConfig()
             {
